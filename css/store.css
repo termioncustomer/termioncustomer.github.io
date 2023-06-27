@@ -33,6 +33,10 @@ body .content{
     border: 1px solid #6e6e70;
 }
 
+body .content .rank ul li{
+    margin-left: 2%;
+}
+
 @media only screen and (max-width: 700px) {
     body .judul .logo{
         width: 90%;
@@ -40,5 +44,8 @@ body .content{
     body .content{
         width: 90%;
         padding: 40px 20px;
+    }
+    body .content .rank ul li{
+        margin-left: 5%;
     }
 }
