@@ -1,0 +1,82 @@
+@font-face {
+    font-family: minecraftFont;
+    src: url(../assets/Minecraft.ttf);
+}
+* {
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+    font-family: minecraftFont, sans-serif;
+    color: white;
+}
+html {
+    background: url(../assets/bg1.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    display: block;
+    margin-top: 80px;
+    margin-bottom: 150px;
+}
+.title .logo-header{
+    width: 800px;
+    animation-name: logoheader;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.content h1{
+    text-align: center;
+}
+.content .item-img{
+    width: 300px;
+    transition: .4s;
+}
+.content .item-img:hover{
+    cursor: pointer;
+    transform: scale(120%);
+}
+
+@keyframes logoheader {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.08);}
+    100% {transform: scale(1);}
+}
+
+
+@media only screen and (max-width: 700px) {
+    .title{
+        margin-bottom: 40px;
+    }
+    .title .logo-header{
+        width: 300px;
+    }
+
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .content div{
+        margin-bottom: 20px;
+    }
+    .content .item-img{
+        width: 100px;
+    }
+}
