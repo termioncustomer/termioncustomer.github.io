@@ -14,8 +14,8 @@ html {
     background-size: cover
 }
 
-body .judul{
-    width: 900px;
+body .judul .logo{
+    width: 50%;
     display: block;
     margin: 50px auto;
 }
@@ -27,4 +27,14 @@ body .content{
     background-color: #12141f;
     border-radius: 50px;
     border: 1px solid #6e6e70;
+}
+
+@media only screen and (max-width: 700px) {
+    body .judul .logo{
+        width: 90%;
+    }
+    body .content{
+        width: 90%;
+        padding: 40px 20px;
+    }
 }
